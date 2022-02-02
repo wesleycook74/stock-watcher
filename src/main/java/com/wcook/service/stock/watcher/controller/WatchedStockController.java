@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RequiredArgsConstructor
-@RequestMapping("/watched-stocks")
+@RequestMapping("/api/watched-stock")
 @RestController
 public class WatchedStockController {
 

@@ -19,6 +19,10 @@ public class YahooFinanceStockPriceService implements StockPriceService {
 
     @Override
     public Map<String, StockPriceInfoDTO> retrieveStockPriceInfo(List<String> stockSymbols) {
+        if (stockSymbols == null || stockSymbols.isEmpty()) {
+            return Map.of();
+        }
+
         try {
             log.info("Retrieving stock price info from Yahoo Finance for stocks symbols {}", stockSymbols);
             var yahooPriceQuotes = YahooFinance.get(stockSymbols.toArray(new String[stockSymbols.size()]));
