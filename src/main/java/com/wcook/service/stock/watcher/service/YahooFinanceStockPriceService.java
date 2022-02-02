@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
-import yahoofinance.quotes.stock.StockQuote;
 
 import java.io.IOException;
 import java.util.List;
