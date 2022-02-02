@@ -1,5 +1,4 @@
-CREATE TABLE STOCK_WATCH (
-    id bigserial primary key,
-    stock_symbol varchar,
+CREATE TABLE watched_stock (
+    stock_symbol varchar primary key,
     created_date timestamp with time zone
 );

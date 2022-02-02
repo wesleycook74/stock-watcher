@@ -1,0 +1,9 @@
+server:
+  error:
+    include-stacktrace: always
+
+logging:
+  level:
+    com:
+      wcook:
+        service: debug
