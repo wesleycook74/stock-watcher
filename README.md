@@ -14,9 +14,9 @@ The service runs on port 8080.
 
 ## Endpoints
 
-| Request                                   | Description                                                    |
-|-------------------------------------------|----------------------------------------------------------------|
-| `GET /api/watched-stock`                  | Returns the list of currently watched stocks with pricing info |
-| `POST /api/watched-stock`                 | Add a new stock to be watched by the symbol                    |
-| `DELETE /api/watched-stock/{stockSymbol}` | Removes a stock from the list of currently watched stocks      |
+| Request                                   | Description                                                                             |
+|-------------------------------------------|-----------------------------------------------------------------------------------------|
+| `GET /api/watched-stock`                  | Returns the list of currently watched stocks with pricing info                          |
+| `POST /api/watched-stock`                 | Add a new stock to be watched by the symbol. Ex. request body: `{"stockSymbol":"AAPL"}` |
+| `DELETE /api/watched-stock/{stockSymbol}` | Removes a stock from the list of currently watched stocks                               |
 
